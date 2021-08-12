@@ -1,0 +1,163 @@
+.main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.road {
+    width: 1000px;
+    height: 1000px;
+}
+
+.car {
+    position: relative;
+    top: -400px;
+    right: -40px;
+    transform: rotate(90deg);
+}
+
+.car2 {
+    filter: hue-rotate(150deg);
+    position: relative;
+    top: -290px;
+    right: -100px;
+}
+
+@keyframes ride {
+
+    0% {
+         top: -400px;
+        right: -40px;
+        transform: rotate(90deg);
+    }
+
+    10% {
+        right: -200px;
+        top: -100px;
+        transform: rotate(0deg);
+    }
+
+    20% {
+        right: -600px;
+        top: -100px;
+        transform: rotate(0deg);
+    }
+
+    30% {
+        right: -850px;
+        top: -200px;
+        transform: rotate(-90deg);
+    }
+
+    40% {
+        right: -800px;
+        top: -500px;
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        right: -800px;
+        top: -700px;
+        transform: rotate(-90deg);
+    }
+
+    60% {
+        right:-700px;
+        top: -1000px;
+        transform: rotate(-180deg);
+    }
+
+    70% {
+        right: -300px;
+        top: -950px;
+        transform:rotate(-180deg);
+    }
+
+    80% {
+        right: -30px;
+        top: -850px;
+    }
+
+    100% {top: -400px;
+    right: -40px;
+    transform: rotate(90deg);
+    } 
+
+}
+
+@keyframes ride2 {
+
+    0% {
+        top: -290px;
+        right: -100px;
+    }
+
+    20% {
+        
+        right: -500px;
+        top: -150px;
+        transform: rotate(0deg);
+    }
+
+    35% {
+        right: -680px;
+        top: -400px;
+        transform: rotate(-90deg);
+    }
+
+    45% {
+        right: -680px;
+        top: -600px;
+        transform: rotate(-90deg);
+    }
+
+    55% {
+        right: -500px;
+        top: -900px;
+        transform: rotate(-180deg);
+    }
+
+    60% {
+        right: -300px;
+        top: -900px;
+        transform: rotate(-180deg);
+    }
+
+    70% {
+        right: -100px;
+        top: -930px;
+        transform: rotate(-200deg);
+    }
+
+    80% {
+        right: 50px;
+        top: -800px;
+        transform: rotate(-270deg);
+    }
+
+    100% {
+        top: -290px;
+        right: -100px;
+        transform: rotate(-360deg);
+    }
+
+
+}
+
+
+.car {
+    animation-name: ride;
+    animation-delay: 1s;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   
+}
+
+.car2 {
+    animation-name: ride2;
+    animation-delay: 3s;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
